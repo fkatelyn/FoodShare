@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/72d5c16fea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">FOOD SHARE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container"><h1 class="hero__heading">Reduce Food Waste <span>Today</span></h1></div>
+        <p class="hero__description">One meal at a time</p>
+        <button class="main__btn"><a href="#">Explore</a></button>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fa-solid fa-cart-xmark"></i></div>
+            </div>
+            <div class="main__content">
+                <h1>What do we do?</h1>
+                <h2>Our goal is to minimize thrown away food</h2>
+                <p>Schedule a call to learn more about our services</p>
+                <button class="main__btn"><a href="#">Schedule Call</a></button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <h2>Restuarants and Supermarkets</h2>
+                <p> </p>
+                <div class="serivces__btn"><button>Learn more</button></div>
+            </div>
+            <div class="services__card">
+                <h2>Charities</h2>
+                <p> </p>
+                <div class="serivces__btn"><button>Learn more</button></div>
+            </div>
+            <div class="services__card">
+                <h2>Community groups</h2>
+                <p> </p>
+                <div class="serivces__btn"><button>Contact us</button></div>
+            </div>
+            <div class="services__card">
+                <h2>Community group partners</h2>
+                <p> </p>
+                <div class="serivces__btn"><button>Contact us</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Join our team</h1>
+                <h2>Sign up today</h2>
+                <p>Be apart of the change</p>
+                <button class="main__signup__btn"><a href="#">Sign Up</a></button>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fa-solid fa-cart-xmark"></i></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Sign up form -->
+    <div class="modal" id="email-modal">
+        <form action="#" class="form">
+            <div class="img-overlay"></div>
+            <div class="icon"><i class="fas fa-times"></i></div>
+            <h1>Join our community</h1>
+            <div class="inputs">
+                <label for="email">email</label>
+                <input id="email" type="email" placeholder="email" />
+            </div>
+            <div class="inputs">
+                <label for="password">password</label>
+                <input id="password" type="password" placeholder="password" />
+            </div>
+            <div class="inputs">
+                <label for="password2">Confirm password</label>
+                <input id="password2" type="password" placeholder="Confirm password" />
+            </div>
+            <input type="submit" class="button" value="sign up" />
+            <p>Already have an account</p>
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
